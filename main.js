@@ -13,17 +13,20 @@ console.log('#5. JavaScript homework example file')
 
 
 
-function count () {
-    let number = 0;
+function count (n = 0) {
+    let number = n;
 
-    function circuitCounter() {
+    function circuitCounter(x) {
+        if(x !== undefined){
+            number = x;
+        }
         return number++;
     }
 
     return circuitCounter;
 }
 
-let counter = count();
+const counter = count();
 
 
 
