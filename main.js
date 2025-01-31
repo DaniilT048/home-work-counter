@@ -13,23 +13,19 @@ console.log('#5. JavaScript homework example file')
 
 
 
-const counter = function (n = 0) {
-    if (n === undefined || n === null) {
-        return number;
-    }
-    let number = n;
-
-
+function count () {
+    let number = 0;
+    console.log(number);
 
     function circuitCounter() {
         number += 1;
         return number;
     }
 
-    return circuitCounter();
+    return circuitCounter;
 }
 
-// let counter = count();
+let counter = count();
 
 
 
@@ -56,7 +52,10 @@ console.log(counter()) // 1
  * counterFactory.decrement() - зменшує значення лічильника на 1
  */
 
-// const counterFactory = function () {}
+ // const counterFactory = function () {
+ //     const value =
+ //         const increment = 0++
+ // }
 
 // console.log(counterFactory.value()) // 0
 // counterFactory.increment()
@@ -127,17 +126,16 @@ console.log(myMax(list)); // 233
  * Функція повертає результат обчислення.
  */
 
-const myDouble = (n) => {
-    return n.bind(myMul(2, n))
-}
+const myDouble = myMul.bind(null, 2);
+
 
 console.log(myDouble(3)) // = myMul(2, 3) = 6
-// console.log(myDouble(4)) // = myMul(2, 4) = 8
-// console.log(myDouble(5)) // = myMul(2, 5) = 10
+console.log(myDouble(4)) // = myMul(2, 4) = 8
+console.log(myDouble(5)) // = myMul(2, 5) = 10
 
 // Аналогічним чином створюємо функцію myTriple(n), яка потроює параметр, що приймає, повертаючи результат.
 
-// const myTriple
+// const myTriple = myMul.bind(null, 2);
 
 // console.log(myTriple(3)) // = myMul(3, 3) = 9
 // console.log(myTriple(4)) // = myMul(3, 4) = 12
