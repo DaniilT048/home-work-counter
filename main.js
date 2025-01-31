@@ -13,21 +13,23 @@ console.log('#5. JavaScript homework example file')
 
 
 
-function count(n = -1) {
+const counter = function (n = 0) {
     if (n === undefined || n === null) {
         return number;
     }
     let number = n;
+
+
 
     function circuitCounter() {
         number += 1;
         return number;
     }
 
-    return circuitCounter;
+    return circuitCounter();
 }
 
-let counter = count();
+// let counter = count();
 
 
 
@@ -101,10 +103,12 @@ console.log(counter()) // 1
  * У реалізації функції має бути застосовано метод Math.max() і apply().
  */
 
-// const list = [12, 23, 100, 34, 56, 9, 233]
-// const myMax = () => {}
+const list = [12, 23, 100, 34, 56, 9, 233]
+const myMax = () => {
+    return Math.max.apply(null, list);
+}
 
-// console.log(myMax(list)); // 233
+console.log(myMax(list)); // 233
 
 /*
  * #5
