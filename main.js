@@ -12,7 +12,7 @@ console.log('#5. JavaScript homework example file')
  */
 
 
-
+console.log("#1======================================================#1")
 function count (n = 0) {
     let number = n;
 
@@ -41,7 +41,7 @@ console.log(counter()) // 502
 console.log(counter(0)) // 0
 console.log(counter()) // 0
 console.log(counter()) // 1
-
+console.log("#1======================================================#1")
 /*
  * #2
  *
@@ -102,20 +102,20 @@ console.log(counter()) // 1
  * довільний числовий масив і повертає максимальне число з переданого їй масиву.
  * У реалізації функції має бути застосовано метод Math.max() і apply().
  */
-
+console.log("#4======================================================#4")
 const list = [12, 23, 100, 34, 56, 9, 233]
 const myMax = () => {
     return Math.max.apply(null, list);
 }
 
 console.log(myMax(list)); // 233
-
+console.log("#4======================================================#4")
 /*
  * #5
  *
  * Створіть функцію myMul(a, b), яка буде множити числа а і b, повертаючи результат.
  */
-
+console.log("#5======================================================#5")
  const myMul = (a, b) => {
      return a * b;
  }
@@ -141,5 +141,5 @@ console.log(myDouble(5)) // = myMul(2, 5) = 10
 console.log(myTriple(3)) // = myMul(3, 3) = 9
 console.log(myTriple(4)) // = myMul(3, 4) = 12
 console.log(myTriple(5)) // = myMul(3, 5) = 15
-
+console.log("#5======================================================#5")
 // export { counter, counterFactory, myPow, myMax, myMul, myDouble, myTriple }
