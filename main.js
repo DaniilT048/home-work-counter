@@ -116,7 +116,10 @@ console.log(myMax(list)); // 233
  * Створіть функцію myMul(a, b), яка буде множити числа а і b, повертаючи результат.
  */
 
-// const myMul = () => {}
+ const myMul = (a, b) => {
+     return a * b;
+ }
+
 
 /*
  * Створіть функції myDouble(n), яка приймає один параметр і подвоює його.
@@ -124,9 +127,11 @@ console.log(myMax(list)); // 233
  * Функція повертає результат обчислення.
  */
 
-// const myDouble
+const myDouble = (n) => {
+    return n.bind(myMul(2, n))
+}
 
-// console.log(myDouble(3)) // = myMul(2, 3) = 6
+console.log(myDouble(3)) // = myMul(2, 3) = 6
 // console.log(myDouble(4)) // = myMul(2, 4) = 8
 // console.log(myDouble(5)) // = myMul(2, 5) = 10
 
