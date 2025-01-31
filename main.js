@@ -11,50 +11,30 @@ console.log('#5. JavaScript homework example file')
  * якщо ні - то лічба триває
  */
 
-// function counter(n){
-//     let superTest = 0;
-//     console.log(superTest);
-//
-//
-//     function superCounter() {
-//
-//         return superTest += 1;
-//     }
-//
-//
-//     return superCounter;
-// }
-// let counter = counter()
-// console.log(counter())
-// console.log(counter())
-// console.log(counter())
-// console.log(counter())
-// console.log(counter())
 
-//console.log(countering());
-// console.log(countering());
-// console.log(countering(100));
-// console.log(countering());
-// console.log(countering());
-// console.log(countering());
 
-function makeCounter (){
-    let number = -1;
+function count(n = 0) {
+    let number = n;
+    if (n === undefined || n === null) {
+        return n;
+    }
+    console.log(number);
 
-    function circuitCounter(){
-        number = number + 1;
+    function circuitCounter() {
+        number += 1;
         return number;
     }
 
     return circuitCounter;
 }
-let counter = makeCounter();
+
+let counter = count();
 
 
 
 console.log(counter()) // 0
 console.log(counter()) // 1
-// console.log(counter(100)) // 100
+console.log(counter(100)) // 100
 // console.log(counter()) // 101
 // console.log(counter()) // 102
 // console.log(counter(500)) // 500
