@@ -14,8 +14,8 @@ console.log('#5. JavaScript homework example file')
 
 
 function count () {
-    let number = 0;
-    console.log(number);
+    let number = -1;
+
 
     function circuitCounter() {
         number += 1;
@@ -135,7 +135,7 @@ console.log(myDouble(5)) // = myMul(2, 5) = 10
 
 // Аналогічним чином створюємо функцію myTriple(n), яка потроює параметр, що приймає, повертаючи результат.
 
-// const myTriple = myMul.bind(null, 2);
+const myTriple = myMul.bind(null, 2);
 
 // console.log(myTriple(3)) // = myMul(3, 3) = 9
 // console.log(myTriple(4)) // = myMul(3, 4) = 12
