@@ -1,3 +1,5 @@
+'use strict';
+
 console.log('#5. JavaScript homework example file')
 
 /*
@@ -9,10 +11,49 @@ console.log('#5. JavaScript homework example file')
  * якщо ні - то лічба триває
  */
 
-// const counter = function() {}
+// function counter(n){
+//     let superTest = 0;
+//     console.log(superTest);
+//
+//
+//     function superCounter() {
+//
+//         return superTest += 1;
+//     }
+//
+//
+//     return superCounter;
+// }
+// let counter = counter()
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
 
-// console.log(counter()) // 0
-// console.log(counter()) // 1
+//console.log(countering());
+// console.log(countering());
+// console.log(countering(100));
+// console.log(countering());
+// console.log(countering());
+// console.log(countering());
+
+function makeCounter (){
+    let number = -1;
+
+    function circuitCounter(){
+        number = number + 1;
+        return number;
+    }
+
+    return circuitCounter;
+}
+let counter = makeCounter();
+
+
+
+console.log(counter()) // 0
+console.log(counter()) // 1
 // console.log(counter(100)) // 100
 // console.log(counter()) // 101
 // console.log(counter()) // 102
@@ -114,4 +155,4 @@ console.log('#5. JavaScript homework example file')
 // console.log(myTriple(4)) // = myMul(3, 4) = 12
 // console.log(myTriple(5)) // = myMul(3, 5) = 15
 
-export { counter, counterFactory, myPow, myMax, myMul, myDouble, myTriple }
+// export { counter, counterFactory, myPow, myMax, myMul, myDouble, myTriple }
