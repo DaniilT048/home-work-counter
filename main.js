@@ -52,27 +52,43 @@ console.log("#1======================================================#1")
  * counterFactory.increment() - збільшує значення лічильника на 1
  * counterFactory.decrement() - зменшує значення лічильника на 1
  */
+console.log("#2======================================================#2")
 
- // const counterFactory = function () {
- //     const value =
- //         const increment = 0++
- // }
+const counterFactoryyyy = function (n = 0) {
+   let counter = n
+   return {
+    value: function (newValue) {
+        if (newValue !== undefined) {
+           return counter = newValue;
+        }
+        return counter;
+    },
+    increment: function () {
+        return counter++;
+    },
+       decrement: function () {
+           return counter--;
+       },
+   }
+}
+let counterFactory = counterFactoryyyy()
 
-// console.log(counterFactory.value()) // 0
-// counterFactory.increment()
-// counterFactory.increment()
-// counterFactory.increment()
-// console.log(counterFactory.value()) // 3
-// counterFactory.decrement()
-// counterFactory.decrement()
-// console.log(counterFactory.value()) // 1
-// console.log(counterFactory.value(100)) // 100
-// counterFactory.decrement()
-// console.log(counterFactory.value()) // 99
-// console.log(counterFactory.value(200)) // 200
-// counterFactory.increment()
-// console.log(counterFactory.value()) // 201
+console.log(counterFactory.value()) // 0
+counterFactory.increment()
+counterFactory.increment()
+counterFactory.increment()
+console.log(counterFactory.value()) // 3
+counterFactory.decrement()
+counterFactory.decrement()
+console.log(counterFactory.value()) // 1
+console.log(counterFactory.value(100)) // 100
+counterFactory.decrement()
+console.log(counterFactory.value()) // 99
+console.log(counterFactory.value(200)) // 200
+counterFactory.increment()
+console.log(counterFactory.value()) // 201
 
+    console.log("#2======================================================#2")
 /*
  * #3
  *
