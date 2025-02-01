@@ -26,7 +26,7 @@ function count (n = 0) {
     return circuitCounter;
 }
 
-const counter = count();
+let counter = count();
 
 
 
@@ -120,8 +120,8 @@ console.log(counterFactory.value()) // 201
  */
 console.log("#4======================================================#4")
 const list = [12, 23, 100, 34, 56, 9, 233]
-const myMax = () => {
-    return Math.max.apply(null, list);
+const myMax = (arr) => {
+    return Math.max.apply(null, arr);
 }
 
 console.log(myMax(list)); // 233
